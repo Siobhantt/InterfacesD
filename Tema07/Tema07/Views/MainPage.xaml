@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tema07.Views.MainPage"
+             Title="MainPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Ejercicios Unidad 7"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="entryNombre"
+               Placeholder="Nombre"></Entry>
+        <Entry x:Name="entryApellidos"
+               Placeholder="Apellidos"></Entry>
+
+        <Button x:Name="Boton"
+    Text="Pagina Tabbed"
+    BackgroundColor="Blue"
+   WidthRequest="200"
+     HeightRequest="70" 
+    FontFamily="Verdana"
+    HorizontalOptions="Center" 
+    BorderColor="Yellow"
+    BorderWidth="5"
+    IsEnabled="True"
+                Clicked="Clicked"/>
+        
+        <Button x:Name="btPagina4"
+ Text="Pagina4"
+ BackgroundColor="Red"
+WidthRequest="200"
+  HeightRequest="70" 
+ FontFamily="Verdana"
+ HorizontalOptions="Center" 
+ BorderColor="Orange"
+ BorderWidth="5"
+ IsEnabled="True"
+             Clicked="ClickedPag4"/>
+        
+        <Button x:Name="btPagina5"
+ Text="Pagina5"
+ BackgroundColor="Coral"
+WidthRequest="200"
+  HeightRequest="70" 
+ FontFamily="Verdana"
+ HorizontalOptions="Center" 
+ BorderColor="Aquamarine"
+ BorderWidth="5"
+ IsEnabled="True"
+             Clicked="ClickedPag5"/>
+    </VerticalStackLayout>
+</ContentPage>
