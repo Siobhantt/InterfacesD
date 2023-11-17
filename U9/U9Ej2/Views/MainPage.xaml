@@ -16,8 +16,8 @@
             VerticalOptions="Center">
 
             
-            <Label Text="{Binding }"></Label>
-            <Entry></Entry>
+            <Label Text="{Binding Nombre}"></Label>
+            <Entry Text="{Binding Nombre}"></Entry>
             
 
         </VerticalStackLayout>

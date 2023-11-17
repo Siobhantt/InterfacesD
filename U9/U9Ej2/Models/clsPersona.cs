@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace U9Ej2.Models
@@ -46,7 +47,6 @@ namespace U9Ej2.Models
             get { return $"{nombre} {apellido}"; }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
         #endregion
 
         #region Metodos y Funciones
@@ -62,5 +62,12 @@ namespace U9Ej2.Models
         }
 
         #endregion
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String Nombre = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Nombre));
+        }
     }
 }
