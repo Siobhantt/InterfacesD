@@ -19,11 +19,12 @@ namespace U9Ej2.Models
         #region Constructor
         public clsPersona()
         {
-            this.nombre = "";
+            this.nombre = "Luisa";
             this.apellido = "";
         }
         public clsPersona(string nombre, string apellido)
         {
+
             this.nombre = nombre;
             this.apellido = apellido;
         }
@@ -32,16 +33,17 @@ namespace U9Ej2.Models
 
         #region Propiedades
         public string Nombre
-        {
+        { 
             get { return nombre; }
-            set { nombre = value; }
+            set { nombre = value;
+                NotifyPropertyChanged();
+            }
         }
         public string Apellido
         {
             get { return apellido; }
             set { apellido = value; }
         }
-        public string Dirección { get; set; }
         public string NombreCompleto
         {
             get { return $"{nombre} {apellido}"; }
